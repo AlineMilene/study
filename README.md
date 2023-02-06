@@ -1,2 +1,1 @@
-# study
-Estudos TI
+# Repositório de Estudos
