@@ -132,23 +132,23 @@
 ## Comandos intermediários
 
 16. **Revertendo um commit (continua a existir o commit)**
-`git revert HASH`: reverte o commit específico
-`git revert HEAD` ou `git revert HEAD --no-edit`: reverte o último commit com opção de editar ou não as alterações
+- `git revert HASH`: reverte o commit específico
+- `git revert HEAD` ou `git revert HEAD --no-edit`: reverte o último commit com opção de editar ou não as alterações
 <br>
 
 17. **Desfazendo um commit (deixa de existir o commit)**
-`git reset --hard HEAD-1`: remove o commit totalmente, inclusive as mudanças. O head também é ajustado para 1 commit anterior, sendo possível escolher o número de commits que deseja remover
-`git reset --mixed HEAD-1`: remove o commit e mantém as mudanças na área de trabalho
-`git reset --soft HEAD-1`: remove o commit e mantém as mudanças na área de preparação
+- `git reset --hard HEAD-1`: remove o commit totalmente, inclusive as mudanças. O head também é ajustado para 1 commit anterior, sendo possível escolher o número de commits que deseja remover
+- `git reset --mixed HEAD-1`: remove o commit e mantém as mudanças na área de trabalho
+- `git reset --soft HEAD-1`: remove o commit e mantém as mudanças na área de preparação
 <br>
 
 18.  **Forçando envio de mudanças**
-`git push --force` ou `git push -f`: sobrescreve o repositório remoto com as mudanças locais, perdendo mudanças remotas (usado quando houve git reset de commits)
-`git push --force-with-lease`: envia as informações para o repositório remoto apenas se não houver perca de histórico
+- `git push --force` ou `git push -f`: sobrescreve o repositório remoto com as mudanças locais, perdendo mudanças remotas (usado quando houve git reset de commits)
+- `git push --force-with-lease`: envia as informações para o repositório remoto apenas se não houver perca de histórico
 <br>
 
 19.  **Rebase**
-`git rebase main`: traz o novo commit da main como base para a branch atual que você executou o comando
+- `git rebase main`: traz o novo commit da main como base para a branch atual que você executou o comando
 <br>
 
 **README**
